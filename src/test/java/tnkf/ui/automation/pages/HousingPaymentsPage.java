@@ -56,10 +56,10 @@ public class HousingPaymentsPage extends PaymentsPage {
         List<WebElementFacade> providersLinks = getAllProvidersLinks();
         for (WebElement element:providersLinks) {
             if (element.getAttribute("title").equalsIgnoreCase(providerName)) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     private List<WebElementFacade> getSuggestionEntries() {
