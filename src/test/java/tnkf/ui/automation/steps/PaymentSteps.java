@@ -142,7 +142,7 @@ public class PaymentSteps extends BaseSteps {
 
     @Step
     public void check_provider_not_in_list(String providerName) {
-        assertThat(providerPaymentFormPage.isProviderIsInList(providerName));
+        assertThat(providerPaymentFormPage.isProviderIsInList(providerName)).isFalse();
     }
 
     // endregion
